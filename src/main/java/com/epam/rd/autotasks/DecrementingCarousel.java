@@ -15,7 +15,7 @@ public class DecrementingCarousel {
     }
 
     public boolean addElement(int element){
-        if(isRunning ||que.size() == capacity) return false;
+        if(isRunning || que.size() == capacity || element <= 0) return false;
         que.offer(element);
         return true;
     }
